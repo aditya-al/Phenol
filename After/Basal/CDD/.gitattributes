@@ -1,0 +1,2 @@
+*. filter=lfs diff=lfs merge=lfs -text
+C:/Users/ACER/Documents/GitHub/Phenol/After/Basal/CDD/CHGCAR filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,3 @@
+  113 atoms found
+   52 vibrations found
+ 2704 matrices evaluated

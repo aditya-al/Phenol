@@ -1,0 +1,17 @@
+# Mengatur format output
+set terminal jpeg font "Times New Roman,12" size 800,600
+set output 'IR.jpeg'
+
+# Mengatur font untuk judul grafik dan sumbu
+set xlabel "Wavenumber (cm-1)" font "Times New Roman,14"
+set ylabel "Intensities (a.u.)" font "Times New Roman,14"
+
+# Mengatur font untuk legenda (key)
+set key font "Times New Roman,12"
+
+# Mengatur grid
+set grid
+
+# Plot data
+plot 'PHENOL.txt' using 1:2 with lines lw 2 lc rgb "blue" title 'Before', \
+     'BASAL.txt' using 1:2 with lines lw 2 lc rgb "red" title 'After'

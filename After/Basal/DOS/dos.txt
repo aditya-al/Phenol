@@ -1,0 +1,21 @@
+# Mengatur format output
+set terminal pngcairo font "Times New Roman,12" size 800,600
+set output 'grafik_output.png'
+
+# Mengatur judul dan label sumbu
+set xlabel "E-Ef (eV)"
+set ylabel "DOS (States/eV)"
+
+# Mengatur font untuk judul grafik dan sumbu
+set xlabel "E-Ef (eV)" font "Times New Roman,14"
+set ylabel "DOS (States/eV)" font "Times New Roman,14"
+
+# Mengatur font untuk legenda (key)
+set key font "Times New Roman,12"
+
+# Mengatur grid
+set grid
+
+# Plot data
+plot 'DOSsebelum' using 1:(column(6) + column(4) + column(8)) with lines lw 2 lc rgb "blue" title 'Orbital p sebelum', \
+     'DOSsetelah' using 1:(column(6) + column(4) + column(8)) with lines lw 2 lc rgb "red" title 'Orbital p setelah'
